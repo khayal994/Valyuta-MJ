@@ -15,7 +15,7 @@ function convertCurrency() {
     } else if(currency === "eur") {
         result = amount / 1.80;
     } else if(currency === "gbp") {
-        result = amount / 0.61; 
+        result = amount / 0.061; 
     }
     switch (currency) {
         case "usd":
