@@ -19,9 +19,21 @@
         <div class="h1">
             <h1>Welcome to New Currency Wepsite</h1>
         </div>
-        <button onclick="myFunction()" type="button" class="btn btn-warning">Currency</button>
+        <button onclick="openPopup()" type="button" class="btn btn-warning">Currency</button>
+        <div class="cont">
+            <div class="popup" id="popup">
+                <h2>Currency Pogram</h2>
+                <input placeholder="Enter the amont here" type="text">
+                <button id="btn3" type="submit">Gonder</button>
+                <input id="btn4" placeholder="USD :" type="text"><br>
+                <input id="btn4" placeholder="EUR :" type="text"><br>
+                <input id="btn4" placeholder="TRY :" type="text"><br>
+                 <button type="sumbit" id="btn2" onclick="closePopup()">Close</button>
+        </div>
+        </div>
     </div>
-    <script src="app.js"></script>
+
+    <script src="apps.js"></script>
 </body>
 
 </html>
