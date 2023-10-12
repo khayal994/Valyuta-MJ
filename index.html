@@ -22,12 +22,17 @@
         <button onclick="openPopup()" type="button" class="btn btn-warning">Currency</button>
         <div class="cont">
             <div class="popup" id="popup">
-                <h2>Currency Pogram</h2>
-                <input placeholder="Enter the amont here" type="text">
-                <button id="btn3" type="submit">Gonder</button>
-                <input id="btn4" placeholder="USD :" type="text"><br>
-                <input id="btn4" placeholder="EUR :" type="text"><br>
-                <input id="btn4" placeholder="TRY :" type="text"><br>
+                <h2>Currency Converter</h2>
+                <input type="number" placeholder="Enter the amont here" id="amount"><br>
+                <p>from</p>
+                <select id="currency">
+                    <option value="usd">ABD Dollar (USD)</option>
+                    <option value="eur">Euro (EUR)</option>
+                    <option value="gbp">TRY Turk (TL)</option>
+                </select>
+                <button id="ffj" onclick="convertCurrency()">Convert</button>
+                <h4>Result: <span id="result"></span></h4>
+                <br>
                  <button type="sumbit" id="btn2" onclick="closePopup()">Close</button>
         </div>
         </div>
